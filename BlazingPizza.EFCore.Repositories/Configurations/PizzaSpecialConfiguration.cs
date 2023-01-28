@@ -1,6 +1,6 @@
 ﻿namespace BlazingPizza.EFCore.Repositories.Configurations;
 class PizzaSpecialConfiguration :
-    IEntityTypeConfiguration<Repositories.Entities.PizzaSpecial>
+    IEntityTypeConfiguration<PizzaSpecial>
 {
     public void Configure(EntityTypeBuilder<PizzaSpecial> pBuilder)
     {

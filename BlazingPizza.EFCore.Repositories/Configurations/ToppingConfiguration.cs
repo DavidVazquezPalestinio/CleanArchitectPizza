@@ -1,6 +1,6 @@
 ﻿namespace BlazingPizza.EFCore.Repositories.Configurations;
 public class ToppingConfiguration :
-    IEntityTypeConfiguration<Repositories.Entities.Topping>
+    IEntityTypeConfiguration<Topping>
 {
     public void Configure(EntityTypeBuilder<Topping> pBuilder)
     {

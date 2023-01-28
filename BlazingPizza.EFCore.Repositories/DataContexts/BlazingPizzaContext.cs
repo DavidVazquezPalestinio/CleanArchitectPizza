@@ -3,8 +3,8 @@ public class BlazingPizzaContext : DbContext
 {
     public BlazingPizzaContext(DbContextOptions pOptions) : base(pOptions) { }
 
-    public DbSet<Repositories.Entities.PizzaSpecial> Specials { get; set; }
-    public DbSet<Repositories.Entities.Topping> Toppings { get; set; }
+    public DbSet<PizzaSpecial> Specials { get; set; }
+    public DbSet<Topping> Toppings { get; set; }
 
     protected override void OnModelCreating(ModelBuilder pModelBuilder)
     {

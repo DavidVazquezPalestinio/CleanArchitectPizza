@@ -4,8 +4,10 @@ namespace BlazingPizza.ViewModels;
 public class IndexViewModel : IIndexViewModel
 {
     readonly IOrderStateService OrderStateService;
-    public IndexViewModel(IOrderStateService pOrderStateService) =>
+    public IndexViewModel(IOrderStateService pOrderStateService)
+    {
         OrderStateService = pOrderStateService;
+    }
 
     public Pizza ConfiguringPizza { get; set; }
     public bool ShowingConfigureDialog { get; set; }

@@ -2,8 +2,8 @@
 internal static class EntitiesMapper
 {
     public static BusinessObjects.Entities.PizzaSpecial ToPizzaSpecial(
-        this Repositories.Entities.PizzaSpecial pIzzaSpecial) =>
-        new BusinessObjects.Entities.PizzaSpecial
+        this PizzaSpecial pIzzaSpecial) =>
+        new()
         {
             Id = pIzzaSpecial.Id,
             Name = pIzzaSpecial.Name,
@@ -13,8 +13,8 @@ internal static class EntitiesMapper
         };
 
     public static BusinessObjects.Entities.Topping ToTopping(
-        this Repositories.Entities.Topping pTopping) =>
-        new BusinessObjects.Entities.Topping
+        this Topping pTopping) =>
+        new()
         {
             Id = pTopping.Id,
             Name = pTopping.Name,
